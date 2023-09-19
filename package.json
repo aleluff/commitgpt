@@ -1,35 +1,30 @@
 {
-  "name": "commitgpt",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "bin": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "ts-node --esm index.ts",
-    "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RomanHotsiy/commitgpt.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RomanHotsiy/commitgpt/issues"
-  },
-  "homepage": "https://github.com/RomanHotsiy/commitgpt#readme",
-  "dependencies": {
-    "enquirer": "^2.3.6",
-    "openai": "^3.2.1",
-    "ora": "^6.1.2",
-    "uuid": "^9.0.0",
-    "ws": "^8.12.1",
-    "yargs-parser": "^21.1.1"
-  },
-  "devDependencies": {
-    "ts-node": "^10.9.1"
-  }
+	"name": "commitgpt",
+	"version": "3",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"bin": "dist/index.js",
+	"scripts": {
+		"start": "node ./commitgpt.js",
+		"history": "node ./commitgpt.js --history"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aleluff/commitgpt.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/aleluff/commitgpt/issues"
+	},
+	"homepage": "https://github.com/aleluff/commitgpt#readme",
+	"dependencies": {
+		"openai": "latest",
+		"simple-git": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "latest"
+	}
 }
